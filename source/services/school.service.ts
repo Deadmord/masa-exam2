@@ -19,7 +19,7 @@ interface localWhiteBoardType {
 interface ISchoolService {
 
 
-    getBoardTypes(): Promise<whiteBoardType>;
+    getBoardTypes(): Promise<whiteBoardType[]>;
     getBoardTypeById(id: number): Promise<whiteBoardType>;
     updateBoardTypeById(whiteBoardType: whiteBoardType, userId: number): Promise<whiteBoardType>;
     addBoardType(whiteBoardType: whiteBoardType, userId: number): Promise<whiteBoardType>;
