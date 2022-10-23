@@ -97,24 +97,37 @@
 
 16. **You received a bug stating the following: "Intermittently the following method results in a system getting stuck." You're required to find and fix the problem in this method:** *=> 10 points*
 
-		public static addMonths(date: Date, value: number): Date {
-		    let expectedMonth: number = date.getMonth() + value;
-		    if (expectedMonth > 12) {
-		        expectedMonth = expectedMonth % 12;
-		    }
-    
-		    if (expectedMonth < 0) {
-		        expectedMonth += 12;
-	        }
-    
-		    date.setMonth(date.getMonth() + value);
-	        const daysToAdd: number = date.getMonth() >  expectedMonth ? -1 : 1;
-	        while (date.getMonth() !== expectedMonth) {
-		        date.setDate(date.getDate() + daysToAdd);
-		    }
-    
-		    return  date;
-	    }
+    public static addMonths(date: Date, value: number): Date {
+        let expectedMonth: number = date.getMonth() + value;
+        let curentYear: number = date.getFullYear();
+        if (expectedMonth > 12) {
+            expectedMonth = expectedMonth % 12;
+        }
+
+        if (expectedMonth < 0) {
+            expectedMonth += 12;
+        }
+
+        date.setMonth(date.getMonth() + value);
+        let daysToAdd: number = 0;
+        daysToAdd = (date.getMonth() >  expectedMonth) ? -1 : 1;
+        if (date.getFullYear() > curentYear) 
+        {
+            daysToAdd = -1;
+        }
+        else if (date.getFullYear() < curentYear) 
+        {
+            daysToAdd = 1;
+        }
+        if (date.getMonth() !== expectedMonth) {
+            date.setDate(date.getDate() + daysToAdd);
+        }
+
+        return  date;
+    }
+
+const updateDate: Date = new Date(2022, 1, 1); 
+console.log(DateHelper.addMonths(updateDate, 11)); //31 dec
 
 17. **Having the following DB tables diagram:** *=> 10 points*
 
