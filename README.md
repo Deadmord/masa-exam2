@@ -11,75 +11,84 @@
 1. **What is a PR?** *=> 2 points*
  - [ ] Program Result: the outcome of a programming effort available for testing
  - [ ] Public Relations: a practice of managing and influencing an organizational info to the public
- - [ ] Pull Request: a request to review the code of a developer prior to merging it main branch
+ - [*] Pull Request: a request to review the code of a developer prior to merging it main branch
  - [ ] Private Role: A security role that is used in internal system processing
 
 2. **What is the role of a service in nodejs server architecture?** *=> 2 points*
  - [ ] Get the request from the router, treat the request parameters, prepare the response of the server to the consumer
- - [ ] Keep state of a specific logic portion of the system, provide processing of the data passed from the different controllers, parse the data and returned the processed response
+ - [*] Keep state of a specific logic portion of the system, provide processing of the data passed from the different controllers, parse the data and returned the processed response
  - [ ] To be the first element in the system that should service the consumer for his CRUD request to the server
  - [ ] To provide services to the system that do not require a state but should be used across the whole system
 
 3. **What is INNER JOIN?** *=> 2 points*
  - [ ] A mechanism to link between to tables in the SQL query to bring data based on the same value in two tables. Allows NULL values on one on the sides of the JOIN
- - [ ] A mechanism to link between to tables in the SQL query to bring data based on the same value in two tables. Only non NULL values are accepted for both sides of the JOIN
+ - [*] A mechanism to link between to tables in the SQL query to bring data based on the same value in two tables. Only non NULL values are accepted for both sides of the JOIN
  - [ ] A way of executing to `foreach` loops in JS/TS while the internal loop uses values of the external loop
  - [ ] Such a term does not exist
 
 4. **What is the code of a server error in HTTP protocol?** *=> 2 points*
  - [ ] 2xx
  - [ ] 3xx
- - [ ] 4xx
+ - [*] 4xx
  - [ ] 5xx
 
 5. **What is the correct flow a story?** *=> 2 points*
  - [ ] Software Detailed Design (SDD), Product design, QA review, UI design, Development, QA testing, Customer review
- - [ ] Customer request, Product design, UI design, SDD, QA review, Development, QA testing, Customer User Acceptance Testing (UAT)
+ - [*] Customer request, Product design, UI design, SDD, QA review, Development, QA testing, Customer User Acceptance Testing (UAT)
  - [ ] Product design, SDD, QA review, UI design, Development, QA testing, UAT
  - [ ] Customer request, UI design, Product design, UAT, QA review, Development, QA testing
 
 6. **Which tool would you use to test a nodejs server?** *=> 2 points*
  - [ ] Browser
- - [ ] Postman
+ - [*] Postman
  - [ ] Fiddler
  - [ ] All answers are correct
 
 7. **What is the most secure way to connect to SQL Server?** *=> 2 points*
  - [ ] Integrated security
  - [ ] Mixed mode
- - [ ] SQL Server login
+ - [*] SQL Server login
  - [ ] Application role
 
 8. **What is the correct pair of a protocol and the port for secure HTTP communication?** *=> 2 points*
  - [ ] HTTP:80
- - [ ] HTTPS:80
+ - [*] HTTPS:80
  - [ ] HTTPS:443
  - [ ] HTTP:443
 
 9. **What is a trigger?** *=> 2 points*
  - [ ] Trigger is a piece of code executed by the database engine whenever some action is performed on a database object like tables, view, etc.
- - [ ] Trigger is a method that is called JS/TS environment whenever a certain event is fired to complete an asynchronous code execution
+ - [*] Trigger is a method that is called JS/TS environment whenever a certain event is fired to complete an asynchronous code execution
  - [ ] Trigger is a processing being performed right after the merge of a code to main branch in order to run a build for the system
  - [ ] Trigger is the mechanism by which the router is sending its data to the controller in nodejs server
 
 10. **Why would you use the JWT token? (more than a single answer can be selected)** *=> 2 points*
- - [ ] JWT tokens are encrypted
+ - [*] JWT tokens are encrypted
  - [ ] It's a more secure way of handling authentication and authorization data than username and password
- - [ ] JWT tokens are signed and this signature can be verified uniquely
+ - [*] JWT tokens are signed and this signature can be verified uniquely
  - [ ] All answers are correct
 
 
 ## Section B: Please, explain the following terms the best way you can *=> 22 points*
 
 11. **Authentication & Authorization** *=> 7 points*
-
+	Authentication is the process of verifying a user’s identification and confirm the user’s identity by checking of credentials. 
+	Authorization is the process of allowing access to resources if users have access permissions, by giving or denying specific privileges.
+	The authorization process always follows the authentication procedure.
+	The authorization process begins if the credentials are legitimate. 
+	
 12. **Stored procedure** *=> 3 points*
+	Stored procedure is a collection of sql command and statements, which is compiled and stored on the database. Stored procedures can also be cached and reused. 
+	The purpose of stored procedures to hide direct SQL queries from the code and and provide a more efficient interface for interacting with data.
 
 13. **Git rebase** *=> 4 points*
+	Git rebase is the way in git that allows us to merge the changes of two branches. It allows you to rewrite the history of a branch, giving that history the look we need.
 
 14. **Generics** *=> 4 points*
+	Generics is a way that allows you to write components in TypeScript that can work with different types of data. Specifying the type of parameter to be passed when calling the function.
 
 15. **Middleware** *=> 4 points*
+	Middleware is a layer or complex of technological software for ensuring interaction between various applications, systems, components. It can be used for example for authentication & authorization.
 
  
 ## Part II: Practice on paper *=> 45 points*
