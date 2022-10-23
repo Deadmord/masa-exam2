@@ -219,7 +219,7 @@ SELECT student.first_name + ' ' + student.last_name, parent.first_name + ' ' + p
 The following is the list of currently existing problems with the system. :
 
 21. **The server solution cannot be compiled. Fix all compilation issues accordingly.** *=> 10 points*
-
+	Done. Compileble solution at `broken-server` branch.
 22. **An attempt to get a list of board types fails.** *=> 5 points*
 
 23. **Any request to the server returns: "A token is required for authentication" even in case the token is supplied for the request.** *=> 5 points*
