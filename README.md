@@ -144,7 +144,10 @@ You need to write a query that returns for each student his/her parents' informa
 SELECT student.first_name + ' ' + student.last_name, parent.first_name + ' ' + parent.last_name + ' ' + parent.phone FROM student LEFT JOIN parent_to_student ON parent_to_student.student_id = student.id LEFT JOIN parent ON parent.id = parent_to_student.parent_id
 
 18. **Write a method in JS/TS that gets as an argument an array of numbers and returns the sum of all array members**. *=> 5 points*
-
+		sumElements(array: number[]): number {
+        	const total = array.reduce((prev: number, curr: number) => prev + curr);
+        	return total;
+    	}	
 19. **Explain the following piece of code:** *=> 5 points*
 
 		public static padLeft(input: number, places: number): string {
